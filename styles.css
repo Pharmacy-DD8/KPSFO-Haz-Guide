@@ -294,3 +294,74 @@ header {
         margin-bottom: 10px; /* Space between tools */
     }
 }
+
+/* Responsive styles for phones with screen size of 6.7" or smaller */
+@media only screen and (max-width: 430px) {
+    .items-container {
+        display: block; /* Stack items vertically */
+    }
+
+    .item {
+        width: 100%; /* Full width of the container */
+        display: block; /* Stack item details and image vertically */
+        padding: 10px; /* Reduced padding */
+        margin-bottom: 20px; /* Add space between items */
+    }
+
+    .item-details {
+        padding-right: 0; /* Remove right padding */
+        margin-bottom: 10px; /* Space between image and details */
+    }
+
+    .item-image {
+        width: 80px; /* Smaller width */
+        height: 80px; /* Smaller height */
+        margin-bottom: 10px; /* Space between image and tools */
+    }
+
+    .tools-list {
+        display: block; /* Stack tools vertically */
+    }
+
+    .tool {
+        width: 100%; /* Full width of the container */
+        margin-bottom: 10px; /* Space between tools */
+    }
+
+    .header-container {
+        display: block; /* Stack header items vertically */
+        text-align: center;
+    }
+
+    .logo img {
+        width: 200px; /* Smaller logo for phones */
+    }
+
+    .search-container {
+        margin-bottom: 10px;
+    }
+
+    .warning {
+        max-width: 100%; /* Full width */
+        padding: 5px; /* Reduced padding */
+    }
+
+    .modal-content {
+        width: 90%; /* Reduce modal width on smaller screens */
+        margin: 20% auto; /* Adjust vertical position */
+    }
+
+    #largeImageModal .modal-content {
+        max-width: 90%; /* Ensure large image fits on screen */
+    }
+
+    .tools-list {
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
+/* Disable pointer events on tools */
+.tools-list .tool {
+    pointer-events: none; /* Disable all click events */
+    cursor: default; /* Change cursor to default arrow */
+}
