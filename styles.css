@@ -54,7 +54,7 @@ header {
     border: 1px solid #ffcccc; /* Slightly darker red border */
     border-radius: 5px;
     padding: 10px;
-    max-width: 400px; /* Match width with the search bar */
+    max-width: 250px; /* Match width with the search bar */
     margin: 10px auto; /* Center the warning */
 }
 
@@ -66,7 +66,7 @@ header {
 
 .warning p {
     margin: 0;
-    font-size: 18px; /* Larger text size */
+    font-size: 13px; /* Larger text size */
     color: #d8000c; /* Red color for text */
 }
 
