@@ -14,6 +14,10 @@ header {
     border-bottom: 2px solid #eee;
 }
 
+.header-container {
+    text-align: center; /* Center all content in the header */
+}
+
 .logo img {
     width: 750px;
     height: auto;
@@ -28,11 +32,12 @@ header {
 }
 
 .search-container input {
-    width: 300px;
-    padding-left: 30px;
-    height: 35px;
+    width: 400px; /* Increase the width */
+    height: 45px; /* Increase the height */
+    padding-left: 40px; /* Adjust padding for better spacing */
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 18px; /* Increase the font size */
 }
 
 .search-icon {
@@ -42,6 +47,40 @@ header {
     transform: translateY(-50%);
     font-size: 18px;
     color: #aaa;
+}
+
+/* Warning Styling */
+.warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdddd; /* Light red background for warning */
+    border: 1px solid #ffcccc; /* Slightly darker red border */
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 300px; /* Match width with the search bar */
+    margin: 10px auto; /* Center horizontally */
+}
+
+.warning-icon {
+    width: 35px; /* Adjust size as needed */
+    height: 35px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.warning p {
+    margin: 0;
+    font-size: 16px;
+    color: #d8000c; /* Red color for text */
+}
+
+.warning a {
+    color: #d8000c; /* Same red color for the link */
+    text-decoration: underline;
+}
+
+.warning a:hover {
+    color: #a00000; /* Darker red on hover */
 }
 
 /* Featured items */
