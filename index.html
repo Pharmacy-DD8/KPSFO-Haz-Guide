@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/KP_logo.png" alt="KP Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search">
+        </div>        
+    </header>
+
+    <section class="featured-items" id="regular-tubing">
+        <h2>Regular Tubing</h2>
+        <div class="items-container">
+            <div class="item">
+                <div class="item-details">
+                    <h3>Carboplatin</h3>
+                    <p>Chemotherapy, Platinum Compound</p>
+                    <!-- <p>$250.00</p> -->
+                </div>
+                <div class="item-image">
+                    <img src="/images/Meds/Carboplatin.png" alt="Carboplatin">
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-details">
+                    <h3>Cisplatin</h3>
+                    <p>Chemotherapy, Platinum Compound</p>
+                    <!-- <p>$200.00</p> -->
+                </div>
+                <div class="item-image">
+                    <img src="/images/Meds/Cisplatin.png" alt="Cisplatin">
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-details">
+                    <h3>Gemcitabine</h3>
+                    <p>Chemotherapy, Antimetabolite</p>
+                    <!-- <p>$150.00</p> -->
+                </div>
+                <div class="item-image">
+                    <img src="/images/Meds/Gemzar.png" alt="Gemcitabine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-items" id="filtered-tubing">
+        <h2>Filtered Tubing</h2>
+        <div class="items-container">
+            <div class="item">
+                <div class="item-details">
+                    <h3>Doxorubicin</h3>
+                    <p>Chemotherapy, Anthracycline</p>
+                    <!-- <p>$300.00</p> -->
+                </div>
+                <div class="item-image">
+                    <img src="/images/Meds/Doxorubicin.png" alt="Doxorubicin">
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-details">
+                    <h3>Etoposide</h3>
+                    <p>Chemotherapy, Topoisomerase Inhibitor</p>
+                    <!-- <p>$180.00</p> -->
+                </div>
+                <div class="item-image">
+                    <img src="/images/Meds/Etoposide.png" alt="Etoposide">
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-details">
+                    <h3>Paclitaxel</h3>
+                    <p>Chemotherapy, Taxane</p>
+                    <!-- <p>$275.00</p> -->
+                </div>
+                <div class="item-image">
+                    <img src="/images/Meds/Paclitaxel.png" alt="Paclitaxel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-items" id="sq-im-syringe">
+        <h2>SQ/IM Syringe</h2>
+        <div class="items-container">
+            <div class="item">
+                <div class="item-details">
+                    <h3>Methotrexate</h3>
+                    <p>Chemotherapy, Antimetabolite</p>
+                    <!-- <p>$120.00</p> -->
+                </div>
+                <div class="item-image">
+                    <img src="/images/Meds/Methotrexate.png" alt="Methotrexate">
+                </div>
+            </div>
+            <!-- Commented out items
+            <div class="item">
+                <div class="item-details">
+                    <h3>Another Item</h3>
+                    <p>Description</p>
+                    <p>$100.00</p>
+                </div>
+                <div class="item-image">
+                    <img src="path-to-image.jpg" alt="Another Item">
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-details">
+                    <h3>Another Item</h3>
+                    <p>Description</p>
+                    <p>$100.00</p>
+                </div>
+                <div class="item-image">
+                    <img src="path-to-image.jpg" alt="Another Item">
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-tools">
+                <div id="toolsList" class="tools-list"></div>
+                <div>
+                    <img id="modalImage" src="" alt="Item Image">
+                    <h2 id="modalTitle">Item Title</h2>
+                    <p id="modalDescription">Item Description</p>
+                    <p id="modalPrice">Item Price</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Large Image Modal -->
+    <div id="largeImageModal" class="modal">
+        <div class="modal-content">
+            <span class="large-image-close">&times;</span>
+            <img id="largeImage" src="" alt="Large Image">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
