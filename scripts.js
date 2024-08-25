@@ -57,21 +57,26 @@ document.querySelectorAll('.item').forEach(item => {
         if (item.closest('#regular-tubing')) {
             tools = `
                 <div class="tool">Vial Spike<img src="images/Tools/Vial Spike.png" alt="Vial Spike"></div>
-                <div class="tool">Bag Spike<img src="images/Tools/Bag Spike.png" alt="Bag Spike"></div>
                 <div class="tool">Syringe Adapter<img src="images/Tools/Syringe Adapter.png" alt="Syringe Adapter"></div>
+                <div class="tool">Phaseal Optima<img src="images/Tools/Phaseal Optima.png" alt="Phaseal Optima"></div>
+                <div class="tool">Bag Spike<img src="images/Tools/Bag Spike.png" alt="Bag Spike"></div>
                 <div class="tool">Regular Tubing<img src="images/Tools/Regular Tubing.png" alt="Regular Tubing"></div>
             `;
         } else if (item.closest('#filtered-tubing')) {
             tools = `
                 <div class="tool">Vial Spike<img src="images/Tools/Vial Spike.png" alt="Vial Spike"></div>
-                <div class="tool">Bag Spike<img src="images/Tools/Bag Spike.png" alt="Bag Spike"></div>
                 <div class="tool">Syringe Adapter<img src="images/Tools/Syringe Adapter.png" alt="Syringe Adapter"></div>
+                <div class="tool">Phaseal Optima<img src="images/Tools/Phaseal Optima.png" alt="Phaseal Optima"></div>
+                <div class="tool">Bag Spike<img src="images/Tools/Bag Spike.png" alt="Bag Spike"></div>
                 <div class="tool">0.2 Micron Filtered Tubing<img src="images/Tools/0.2 Micron Filtered Tubing.png" alt="0.2 Micron Filtered Tubing"></div>
             `;
         } else if (item.closest('#sq-im-syringe')) {
             tools = `
                 <div class="tool">Vial Spike<img src="images/Tools/Vial Spike.png" alt="Vial Spike"></div>
                 <div class="tool">Syringe Adapter<img src="images/Tools/Syringe Adapter.png" alt="Syringe Adapter"></div>
+                <div class="tool">Phaseal Optima<img src="images/Tools/Phaseal Optima.png" alt="Phaseal Optima"></div>
+                <div class="tool">Texium Connector<img src="images/Tools/Texium Connector.png" alt="Texium Connector"></div>
+
             `;
         }
 

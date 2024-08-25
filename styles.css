@@ -90,6 +90,7 @@ header {
     gap: 20px; /* Space between items */
 }
 
+/* For devices larger than 8 inches */
 .item {
     display: flex;
     align-items: center;
@@ -262,4 +263,34 @@ header {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Responsive styles for devices 8 inches and smaller */
+@media only screen and (max-width: 480px) {
+    .items-container {
+        display: block; /* Stack items vertically */
+    }
+
+    .item {
+        width: 100%; /* Full width of the container */
+        display: block; /* Stack item details and image vertically */
+    }
+
+    .item-details {
+        padding-right: 0; /* Remove right padding */
+        margin-bottom: 10px; /* Space between image and details */
+    }
+
+    .item-image {
+        margin-bottom: 10px; /* Space between image and tools */
+    }
+
+    .tools-list {
+        display: block; /* Stack tools vertically */
+    }
+
+    .tool {
+        width: 100%; /* Full width of the container */
+        margin-bottom: 10px; /* Space between tools */
+    }
 }
